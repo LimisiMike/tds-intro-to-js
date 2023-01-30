@@ -52,3 +52,5 @@ const city = "Nairobi";
 // const city = "Mombasa";
 
 console.log(city);
+
+// Added a change
