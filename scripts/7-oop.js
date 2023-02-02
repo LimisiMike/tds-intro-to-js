@@ -183,8 +183,65 @@ class Employee extends Person3 {
 }
 
 let employee1 = new Employee("Jane Doe", 25, 50000);
-console.log(employee1.getDetails());
+// console.log(employee1.getDetails());
 // -----------------------------------------------------------------
 
 // (e) Inheritance
 // -----------------------------------------------------------------
+
+// Inheritance is a way to create a new class from an existing class
+// Inheritance is a way to extend the functionality of an existing class
+// Inheritance is a way to reuse the code of an existing class
+// Inheritance is a way to create a specialized version of an existing class
+
+// Inheritance is achieved by using the extends keyword
+// The extends keyword is used to create a new class from an existing class
+// The extends keyword is used to inherit the properties and methods of an existing class
+// The extends keyword is used to create a specialized version of an existing class
+
+// The class that is being inherited from is called the parent class or base class
+// The class that is inheriting from another class is called the child class or derived class
+
+// The child class inherits all the properties and methods of the parent class
+// The child class can also have its own properties and methods
+// The child class can override the properties and methods of the parent class
+
+// Inheritance example
+class Person4 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  walk() {
+    console.log("I am walking!");
+  }
+}
+
+class Employee1 extends Person4 {
+  constructor(name, age, salary) {
+    // Calling the constructor of the parent class
+    super(name, age);
+    // Setting the salary property
+    this.salary = salary;
+  }
+
+  // Overriding the walk() method of the parent class
+  walk() {
+    console.log("I am walking and earning!");
+  }
+
+  getDetails() {
+    return `Name: ${this.name}, Age: ${this.age}, Salary: ${this.salary}`;
+  }
+}
+
+let employee2 = new Employee1("Jane Doe", 25, 50000);
+console.log(employee2.getDetails());
+console.log(employee2.walk());
+// -----------------------------------------------------------------
+
+// (f) Polymorphism (Method Overriding)
+// -----------------------------------------------------------------
+
+// Polymorphism is a way to perform a single action in different ways
