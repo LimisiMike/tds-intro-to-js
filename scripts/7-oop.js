@@ -83,7 +83,7 @@ let person2 = new Person("Mike Smith", 30);
 // 4. Reserved words (like JavaScript keywords) cannot be used as identifiers
 
 // Accessing the name property
-console.log(person2.name);
+// console.log(person2.name);
 
 // Accessing using bracket notation
 // The bracket notation is used when the property name is not a valid JavaScript identifier
@@ -119,7 +119,7 @@ console.log(person2.name);
 // Protected access modifier is prefixed with the _ symbol
 
 // Public access modifier example
-class Person {
+class Person1 {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -130,5 +130,61 @@ class Person {
   }
 }
 
-let person3 = new Person("Jane Doe", 25);
-console.log(person3.name);
+let person3 = new Person1("Jane Doe", 25);
+// console.log(person3.name);
+
+// Private access modifier example
+class Person2 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  #getName() {
+    return this.name;
+  }
+
+  returnName() {
+    return this.#getName();
+  }
+}
+
+let person4 = new Person2("Jane Doe", 25);
+// Cannot access private property outside the class
+// console.log(person4.#getName());
+
+// console.log(person4.returnName());
+
+// Protected access modifier example
+class Person3 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // Protected method
+  _getName() {
+    return this.name;
+  }
+}
+
+class Employee extends Person3 {
+  constructor(name, age, salary) {
+    // Calling the constructor of the parent class
+    super(name, age);
+    // Setting the salary property
+    this.salary = salary;
+  }
+
+  // Overriding the _getName() method of the parent class
+  getDetails() {
+    return `Name: ${this.name}, Age: ${this.age}, Salary: ${this.salary}`;
+  }
+}
+
+let employee1 = new Employee("Jane Doe", 25, 50000);
+console.log(employee1.getDetails());
+// -----------------------------------------------------------------
+
+// (e) Inheritance
+// -----------------------------------------------------------------
