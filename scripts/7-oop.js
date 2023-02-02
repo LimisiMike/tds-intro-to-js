@@ -237,11 +237,82 @@ class Employee1 extends Person4 {
 }
 
 let employee2 = new Employee1("Jane Doe", 25, 50000);
-console.log(employee2.getDetails());
-console.log(employee2.walk());
+// console.log(employee2.getDetails());
+// console.log(employee2.walk());
 // -----------------------------------------------------------------
 
 // (f) Polymorphism (Method Overriding)
 // -----------------------------------------------------------------
 
 // Polymorphism is a way to perform a single action in different ways
+// Polymorphism is a way to override the behavior of a method
+// Polymorphism is a way to override the behavior of a method in a child class
+
+// Polymorphism is achieved by overriding the behavior of a method
+// Method overriding is a way to override the behavior of a method in a child class
+// Method overriding is a way to override the behavior of a method in a child class by redefining the method in the child class
+
+// Method overriding example
+class Person5 {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  walk() {
+    console.log("I am walking!");
+  }
+}
+
+class Employee2 extends Person5 {
+  constructor(name, age, salary) {
+    // Calling the constructor of the parent class
+    super(name, age);
+    // Setting the salary property
+    this.salary = salary;
+  }
+
+  // Overriding the walk() method of the parent class
+  walk() {
+    console.log("I am walking and earning!");
+  }
+
+  getDetails() {
+    return `Name: ${this.name}, Age: ${this.age}, Salary: ${this.salary}`;
+  }
+}
+
+let employee3 = new Employee2("Jane Doe", 25, 50000);
+// console.log(employee3.getDetails());
+// console.log(employee3.walk());
+// -----------------------------------------------------------------
+
+// (g) Abstraction (Abstract Classes)
+// -----------------------------------------------------------------
+
+// Abstraction is a way to hide the implementation details of a class
+// Abstraction is a way to hide the implementation details of a class from the outside world
+// Abstraction is a way to hide the implementation details of a class from the outside world and to show only the functionality of a class
+
+// Abstraction is achieved by using abstract classes
+// Abstract classes are classes that cannot be instantiated
+// Abstract classes are classes that cannot be instantiated directly
+// Abstract classes are classes that can only be inherited from
+
+// Abstract classes are prefixed with the abstract keyword
+// Abstract classes are prefixed with the abstract keyword before the class keyword
+// Abstract classes are prefixed with the abstract keyword before the class keyword and the class keyword is omitted
+
+// Abstract classes can have abstract methods
+// Abstract methods are methods that do not have a body
+// Abstract methods are methods that do not have a body and are prefixed with the abstract keyword
+// Abstract methods are methods that do not have a body and are prefixed with the abstract keyword before the method name
+
+// Abstract classes can have concrete methods
+// Concrete methods are methods that have a body
+// Concrete methods are methods that have a body and are prefixed with the concrete keyword
+// Concrete methods are methods that have a body and are prefixed with the concrete keyword before the method name
+
+// Abstract classes can have both abstract and concrete methods
+// Abstract classes can have both abstract and concrete methods and can be inherited from
+// -----------------------------------------------------------------
