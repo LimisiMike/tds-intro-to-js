@@ -17,7 +17,15 @@ let person = {
     city: "Boston",
     state: "MA",
   },
+  walk: function () {
+    console.log("I am walking!");
+  },
+  greeting: function (name) {
+    console.log(`Hello there, ${this.name}!`);
+  },
 };
+
+person.greeting();
 // -----------------------------------------------------------------
 
 // (b) Accessing object properties
