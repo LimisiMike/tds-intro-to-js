@@ -136,3 +136,7 @@ console.log("Date.getHours() = ", new Date().getHours()); // 12
 // (vii) Date.getMinutes()
 // Get the minute (0-59)
 console.log("Date.getMinutes() = ", new Date().getMinutes()); // 30
+
+// (viii) Date.getSeconds()
+// Get the second (0-59)
+console.log("Date.getSeconds() = ", new Date().getSeconds()); // 30
