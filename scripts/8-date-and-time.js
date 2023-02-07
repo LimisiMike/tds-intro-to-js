@@ -132,3 +132,7 @@ console.log("Date.getDay() = ", new Date().getDay()); // 2
 // (vi) Date.getHours()
 // Get the hour (0-23)
 console.log("Date.getHours() = ", new Date().getHours()); // 12
+
+// (vii) Date.getMinutes()
+// Get the minute (0-59)
+console.log("Date.getMinutes() = ", new Date().getMinutes()); // 30
