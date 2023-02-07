@@ -84,3 +84,15 @@ console.log("Math.sqrt(9) = ", Math.sqrt(9)); // 3
 // (ix) Math.random() - random for random number
 // Returns a random number between 0 (inclusive), and 1 (exclusive)
 console.log("Math.random() = ", Math.random()); // 0.123456789
+
+// (x) Math.PI - PI for pi
+// Returns the value of PI
+console.log("Math.PI = ", Math.PI); // 3.141592653589793
+console.log("Math.PI.toFixed(3) = ", Math.PI.toFixed(3)); // 3.14
+
+// (xi) Math.E - E for Euler's number
+// Returns the value of Euler's number
+console.log("Math.E = ", Math.E); // 2.718281828459045
+console.log("Math.E.toFixed(3) = ", Math.E.toFixed(3)); // 2.718
+
+// ------------------------------------------------------------------------------
