@@ -123,4 +123,12 @@ console.log("Date.getMonth() = ", new Date().getMonth()); // 1
 
 // (iv) Date.getDate()
 // Get the day as a number (1-31)
-console.log("Date.getDate() = ", new Date().getDate()); // 1
+console.log("Date.getDate() = ", new Date().getDate()); // 7
+
+// (v) Date.getDay()
+// Get the weekday as a number (0-6)
+console.log("Date.getDay() = ", new Date().getDay()); // 2
+
+// (vi) Date.getHours()
+// Get the hour (0-23)
+console.log("Date.getHours() = ", new Date().getHours()); // 12
