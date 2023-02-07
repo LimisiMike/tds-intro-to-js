@@ -140,3 +140,7 @@ console.log("Date.getMinutes() = ", new Date().getMinutes()); // 30
 // (viii) Date.getSeconds()
 // Get the second (0-59)
 console.log("Date.getSeconds() = ", new Date().getSeconds()); // 30
+
+// (ix) Date.getMilliseconds()
+// Get the millisecond (0-999)
+console.log("Date.getMilliseconds() = ", new Date().getMilliseconds()); // 30
