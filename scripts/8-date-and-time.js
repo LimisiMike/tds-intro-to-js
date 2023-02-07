@@ -119,4 +119,8 @@ console.log("Date.getFullYear() = ", new Date().getFullYear()); // 2021
 
 // (iii) Date.getMonth()
 // Get the month as a number (0-11)
-console.log("Date.getMonth() = ", new Date().getMonth()); // 4
+console.log("Date.getMonth() = ", new Date().getMonth()); // 1
+
+// (iv) Date.getDate()
+// Get the day as a number (1-31)
+console.log("Date.getDate() = ", new Date().getDate()); // 1
