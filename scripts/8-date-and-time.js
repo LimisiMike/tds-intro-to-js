@@ -152,3 +152,7 @@ console.log("Date.getTime() = ", new Date().getTime()); // 1620000000000
 // (xi) Date.parse()
 // Parses a string and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC
 console.log("Date.parse('2021-01-01') = ", Date.parse("2021-01-01")); // 1609459200000
+
+// ------------------------------------------------------------------------------
+
+// ============================ Look at more examples ==============================
