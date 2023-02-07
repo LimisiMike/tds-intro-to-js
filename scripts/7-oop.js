@@ -60,10 +60,11 @@ class Person {
 
 // Instances are objects that are created using a class
 let person1 = new Person("Jane Doe", 25);
+
 // "new" keyword is used to create an instance of a class
 let person2 = new Person("Mike Smith", 30);
 
-// console.log(person1);
+// console.log(person1.walk());
 // console.log(person2);
 // ------------------------------------------------------------------------
 
