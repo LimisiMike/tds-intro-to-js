@@ -42,6 +42,10 @@ const person4 = new Person("John", 30);
 // 1. Math object
 // ------------------------------------------------------------------------------
 
+console.log(
+  "================================== Math Methods =================================="
+);
+
 // (i) Math.abs()
 // Returns the absolute value of a number
 console.log("Math.abs(-5) = ", Math.abs(-5)); // 5
@@ -96,3 +100,23 @@ console.log("Math.E = ", Math.E); // 2.718281828459045
 console.log("Math.E.toFixed(3) = ", Math.E.toFixed(3)); // 2.718
 
 // ------------------------------------------------------------------------------
+
+// 2. Date object
+// ------------------------------------------------------------------------------
+
+console.log(" ");
+console.log(
+  "================================== Date Methods =================================="
+);
+
+// (i) Date.now()
+// Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC
+console.log("Date.now() = ", Date.now()); // 1620000000000
+
+// (ii) Date.getFullYear()
+//  Get the year as a four digit number (yyyy)
+console.log("Date.getFullYear() = ", new Date().getFullYear()); // 2021
+
+// (iii) Date.getMonth()
+// Get the month as a number (0-11)
+console.log("Date.getMonth() = ", new Date().getMonth()); // 4
