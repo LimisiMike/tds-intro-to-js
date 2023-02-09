@@ -93,3 +93,6 @@ function doSomethingAsync() {
 doSomethingAsync()
   .then(() => console.log("I'm done cooking!"))
   .catch(() => console.log("I'm not done cooking!"));
+// ----------------------------------------------------------------------
+
+// 3. Async/Await
