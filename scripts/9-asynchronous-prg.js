@@ -51,19 +51,45 @@ function doSomething(callback) {
 // Example 1
 // ----------------------------------------------------
 // Create a promise
-let promise = new Promise(function (resolve, reject) {
-  // Do an async task async task and then...
+// ========================== Example Promise1 ================================
+// let promise = new Promise(function (resolve, reject) {
+// Do an async task async task and then...
 
-  if (1 > 2) {
-    // If it's successful
-    resolve();
-  } else {
-    // If it's failed
-    reject();
-  }
-});
+//   if (1 > 2) {
+// If it's successful
+// resolve();
+//   } else {
+// If it's failed
+//     reject();
+//   }
+// });
 
 // Consume the promise
-promise
-  .then(() => console.log("Success!"))
-  .catch(() => console.log("Failure!"));
+// promise
+//   .then(() => console.log("Success!"))
+//   .catch(() => console.log("Failure!"));
+
+// Example 2
+// ----------------------------------------------------
+// Create a promise
+function doSomethingAsync() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Status is a boolean variable to represent the status of the async task
+      // We are assuming that the async task is cooking
+      // true = cooking is done, false = cooking is not done
+      let status = true;
+
+      if (status) {
+        resolve();
+      } else {
+        reject();
+      }
+    }, 1000);
+  });
+}
+
+// Consume the promise
+doSomethingAsync()
+  .then(() => console.log("I'm done cooking!"))
+  .catch(() => console.log("I'm not done cooking!"));
