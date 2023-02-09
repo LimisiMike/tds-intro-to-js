@@ -72,13 +72,46 @@ function doSomething(callback) {
 // Example 2
 // ----------------------------------------------------
 // Create a promise
-function doSomethingAsync() {
-  return new Promise((resolve, reject) => {
+// function doSomethingAsync() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+// Status is a boolean variable to represent the status of the async task
+// We are assuming that the async task is cooking
+// true = cooking is done, false = cooking is not done
+//       let status = true;
+
+//       if (status) {
+//         resolve();
+//       } else {
+//         reject();
+//       }
+//     }, 1000);
+//   });
+// }
+
+// Consume the promise
+// doSomethingAsync()
+//   .then(() => console.log("I'm done cooking!"))
+//   .catch(() => console.log("I'm not done cooking!"));
+// ----------------------------------------------------------------------
+
+// 3. Async/Await
+// ----------------------------------------------------------------------
+// Async functions are a new feature in JavaScript that allow you to write
+// asynchronous code in a synchronous manner. Async functions are a new way to
+// write promises based code. They are a combination of promises and generators
+// (which we will learn later).
+
+// Example 1
+// ----------------------------------------------------
+// Create a async/await function
+async function doSomethingAsync() {
+  await new Promise((resolve, reject) => {
     setTimeout(() => {
       // Status is a boolean variable to represent the status of the async task
       // We are assuming that the async task is cooking
       // true = cooking is done, false = cooking is not done
-      let status = true;
+      let status = false;
 
       if (status) {
         resolve();
@@ -89,10 +122,8 @@ function doSomethingAsync() {
   });
 }
 
-// Consume the promise
+// Consume the async/await function
 doSomethingAsync()
   .then(() => console.log("I'm done cooking!"))
   .catch(() => console.log("I'm not done cooking!"));
 // ----------------------------------------------------------------------
-
-// 3. Async/Await
