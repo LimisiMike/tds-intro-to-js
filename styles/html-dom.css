@@ -72,3 +72,27 @@ form h3 {
   margin-bottom: 1rem;
   color: #05ac05;
 }
+/* style the ul and li elements */
+ul {
+  list-style-type: none;
+  width: 70%;
+  margin: 0 auto;
+}
+li {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+/* add styling to class close */
+.close {
+  color: #f11919;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}

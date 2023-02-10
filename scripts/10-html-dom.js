@@ -122,3 +122,24 @@ form.addEventListener("submit", function (e) {
 // ---------------------------------------------------------------------------
 
 // Example 5: Removing an Item from a List
+
+// The HTML DOM allows JavaScript to remove items from a list.
+
+// In this example, we remove a <li> element from a <ul> list:
+
+// Get the element with id="myList"
+let myList = document.getElementById("myList");
+
+// get all the elements with the class name=close
+let close = document.getElementsByClassName("close");
+
+// add event listener to each element with the class name=close
+for (let i = 0; i < close.length; i++) {
+  close[i].addEventListener("click", function () {
+    // get the parent element of the element that was clicked
+    let parent = this.parentElement;
+    // remove the parent element
+    parent.remove();
+  });
+}
+// ---------------------------------------------------------------------------
