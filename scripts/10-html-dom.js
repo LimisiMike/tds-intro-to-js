@@ -104,4 +104,21 @@ document.getElementById("para").style.color = "purple";
 document.getElementById("myBtn").addEventListener("click", function () {
   alert("Hello World!");
 });
+
+// Get the element with the id=fullname and another with id=form-input
+let fullname = document.getElementById("fullname");
+let formInput = document.getElementById("form-input");
+let form = document.getElementById("form");
+
+// Add an onChange event listener to the fullname element and display the content
+// at the form-input element
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  formInput.innerHTML = fullname.value;
+
+  // clear the input field
+  fullname.value = "";
+});
 // ---------------------------------------------------------------------------
+
+// Example 5: Removing an Item from a List
